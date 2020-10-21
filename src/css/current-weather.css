@@ -1,0 +1,66 @@
+.current-weather{
+    display: grid;
+    position: relative;
+    border: 1px solid black;
+    grid-area: current-weather;
+    /* align-items: center; */
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+}
+
+.title-weather-today{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+.current-city-data{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.current-city-data > *{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid black;
+}
+
+.current-weather-column{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  
+}
+
+.wind-speed-now{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rebeccapurple;
+    
+}
+.humidity-speed-now{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: rebeccapurple;
+}
+
+
+
+.current-weather-column > *{
+    display: grid;
+    border: 1px solid black;
+    justify-content: center;
+    align-items:center;
+}

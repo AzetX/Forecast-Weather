@@ -1,0 +1,45 @@
+@import "current-weather.css"; 
+@import "geolocation-data.css";
+@import "weather-for-three-days.css"; 
+@import "control-unit.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    display: grid;
+}
+
+.app{
+    display: grid;
+    background: url('https://i.pinimg.com/originals/1e/24/cb/1e24cb6b11164a067bd2f5b6b98eba2a.jpg');
+    color:white;
+    grid-template-areas: 
+    "control-unit"
+    "current-weather"
+    "weather-for-three-days"
+    "geolocation-data"
+}
+
+
+@media(min-width: 640px){
+    .app{
+        grid-template-rows: 200px 500px 300px 600px;
+        grid-template-areas: 
+        "control-unit control-unit"
+        "current-weather current-weather"
+        "weather-for-three-days weather-for-three-days"
+        "geolocation-data geolocation-data";
+      
+    }
+}
+
+.app> * {
+    padding: 1em;
+    border: 1px solid black;
+    padding: 1em;
+}
+

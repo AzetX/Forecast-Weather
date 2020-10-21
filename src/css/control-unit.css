@@ -1,0 +1,104 @@
+.control-unit{
+  
+    grid-area: control-unit;
+    display: flex;
+    flex-direction: row;
+}
+
+.app__content{
+  display: flex;
+  flex-direction: column; 
+  margin: auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border:1px solid black;
+  width: 650px;
+  height: 150px;
+}
+
+.find-city-weather{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.find-city-weather label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 7px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+
+.find-city-weather input{
+    display: block;
+    width: 100%;
+    max-height: 2.8rem;
+    padding: .8rem 1rem;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4;
+    color: #000;
+    background: #fff none;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.app__content .get-weather{
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.app__content .get-weather:hover{
+    background: #1d49aa;
+}
+
+.app__content .get-weather:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+
+.settings{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+}
+
+.settings  > *{
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #b11990;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.settings > *:hover{
+    background: #1d49aa;
+}
+
+.settings > *:hover:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+

@@ -1,0 +1,43 @@
+.weather-for-three-days{
+    display: grid;
+    position: relative;
+    grid-area: weather-for-three-days;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px;
+}
+
+
+.title-weather-three-days{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    border: 1px solid black;
+}
+
+
+.weather-three-days{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.weather-three-days > *{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+/* .weather-today{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */

@@ -1,0 +1,48 @@
+
+
+.geolocation-data{
+    display: grid;
+    position: relative;
+    grid-area: geolocation-data;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 100px;
+    grid-gap: 10px;
+}
+
+.title-geolocation-data{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px solid black;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.coordinates-user-location{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px solid black;
+}
+
+.coordinates-user-location > * {
+    display: grid; 
+    justify-items: center;
+    align-items: center; 
+    border: 1px solid black;
+}
+
+ #current-map-location{
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border: 1px solid black;
+ }
+

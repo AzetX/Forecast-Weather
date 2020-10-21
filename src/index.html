@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <title>Forecast weather</title>
+</head>
+<body>
+    <div class="app">
+        <div class="control-unit">
+            <div class="settings">
+                <button class="switch-language js" name="change-weather">Eng</button> 
+                <button class="change-background js" type="submit" name="switch-background">Сменить фон</button>
+                <button class="js units" type="submit"name="switch-unit">°F</button>
+            </div>
+           
+            <form action="/" method="POST" class="app__content">
+
+            <div class="find-city-weather">
+                <label for="find-city">Город</label>
+                <input type="text" class="find-city js" placeholder="Введите название города" name="city" pattern="^[А-Яа-яЁё\s-]+$"> 
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="get-weather">Найти</button>
+            <div class="error"></div>
+            </form>
+        </div>
+        <div class="current-weather">
+            <p class="title-weather-today">Погода сегодня</p>
+            <div class="current-city-data">
+                <div class="city-name">Город:</div>
+                <div class="counrty-name">Страна:</div>
+                <div class="current-date-short">Текущая дата:</div>
+                <div class="current-time">Время:</div>
+            </div>
+            <div class="current-weather-column">
+                <div class="temprature-now unit">Температура:</div>
+                <div class="summary-now">Обобщенно:</div>
+                <div class="apparent-temperature-now unit">Ощущается как:</div>
+                <div class="wind-speed-now">Скорость ветра:</div>
+                 <div class="icon"></div>
+                <div class="humidity-speed-now">Влажность:</div>
+            </div>
+        </div>
+     
+    
+        <div class="weather-for-three-days">
+            <p class="title-weather-three-days">Прогноз погоды на три дня</p>
+            <div class="weather-three-days">
+                <div class="weather-today">
+                    <div class="today-icona"></div>
+                    <div class="today-date"></div>
+                    <div class="today-avg-temp unit"></div>
+                </div>
+                <div class="weather-in-tomorrow-days">
+                    <div class="tomorrow-days-icona"></div>
+                    <div class="tomorrow-days-date"></div>
+                    <div class="tomorrow-days-avg-temp unit"></div>
+                </div>
+                <div class="weather-in-two-days">
+                    <div class="two-days-icona"></div>
+                    <div class="two-days-date"></div>
+                    <div class="two-days-avg-temp unit"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="geolocation-data">
+            <p class="title-geolocation-data">Геолокационные данные</p>
+            <div class="coordinates-user-location">
+               <div class="longitud">Долгота:</div>
+               <div class="latitude">Широта:</div>
+            </div>
+            <div id="current-map-location">
+               КАРТА
+            </div>
+        </div>
+    </div>
+</body>
+</html>
